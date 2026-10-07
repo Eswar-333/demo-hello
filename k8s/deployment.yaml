@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demohello-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demohello
+  template:
+    metadata:
+      labels:
+        app: demohello
+    spec:
+      containers:
+        - name: demohello
+          image: rgneswar/demohello:2026-10-06-054844
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
