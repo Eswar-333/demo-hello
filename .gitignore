@@ -1,8 +1,9 @@
+
 # Terraform
 terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.*
-terraform/.terraform.lock.hcl
+terraform/crash.log
 
 # Terraform variable files that may contain secrets
 terraform/*.tfvars
@@ -16,6 +17,7 @@ venv/
 
 # Environment/secrets
 .env
+.env.*
 
 # IDE
 .vscode/

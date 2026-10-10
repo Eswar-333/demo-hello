@@ -177,7 +177,7 @@ module "eks" {
       # have enough pod capacity.
       min_size     = 1
       desired_size = 2
-      max_size     = 3
+      max_size     = 2
 
 
       #######################################################################

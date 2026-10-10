@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: demohello
-          image: rgneswar/demohello:2026-10-06-054844
+          image: rgneswar/demohello:r1
           imagePullPolicy: Always
           ports:
-            - containerPort: 5000
+            - containerPort: 5005
